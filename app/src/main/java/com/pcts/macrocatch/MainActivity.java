@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 .setCancelable(false)
                 .setDuration(Duration.INDEFINITE)
                 .setUpdateFrom(UpdateFrom.GITHUB)
-                .setGitHubUserAndRepo("jsantos-pcts","MACRO");
+                .setGitHubUserAndRepo("jsantos-pcts", "MACRO");
         appUpdater.start();
 
         btnCamera = (Button)findViewById(R.id.btnCamera);
