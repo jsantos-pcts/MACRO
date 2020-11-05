@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 int position = edtProposta.length();
                 Editable etext = edtProposta.getText();
                 Selection.setSelection(etext, position);
-
+                //Teste Update
             }
         });
 
