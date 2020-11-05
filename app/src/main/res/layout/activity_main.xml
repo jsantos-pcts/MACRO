@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:logo="@drawable/toolbar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitle="Capturar Fotos" />
+
+    <View
+        android:id="@+id/myline"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbarMain"
+        android:layout_height="5dp"
+        android:background="?attr/colorAccent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/myline"
+        android:id="@+id/layoute">
+
+        <RadioGroup
+            android:id="@+id/radioIPP_PP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RadioButton
+                android:id="@+id/radioPP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:text="PP" />
+
+            <RadioButton
+                android:id="@+id/radioIPP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:text="IPP" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/lout"
+            android:layout_below="@+id/radioIPP_PP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fotos relativas a: " />
+
+            <TextView
+                android:id="@+id/txtFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtProposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lout"
+            android:hint="Obra"
+            app:backgroundTint="@color/blue_gray_light"
+            android:textSize="20sp"
+            android:inputType="textVisiblePassword|textCapCharacters"
+            android:singleLine="true"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Ficheiro"
+            app:backgroundTint="@color/blue_gray_light"
+            android:layout_below="@id/edtProposta"
+            android:textSize="20sp"
+            android:inputType="textVisiblePassword"
+            android:singleLine="true"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtNome"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_above="@+id/btnCamera"
+            android:layout_below="@+id/tvPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnCamera"
+            android:enabled="false"
+            android:text="Abrir Camera" />
+
+    </RelativeLayout>
+</RelativeLayout>

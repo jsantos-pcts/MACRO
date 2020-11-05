@@ -1,0 +1,10 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#1e90ff</item>
+        <item name="colorPrimaryDark">#0059b3</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="colorAccent">#ffdd00</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

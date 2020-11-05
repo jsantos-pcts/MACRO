@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Obra"
+        android:id="@+id/obra" />
+
+    <item android:title="Administrativo"
+        android:id="@+id/admin" />
+
+    <item android:title="Outros"
+        android:id="@+id/outros" />
+
+    <item android:title="Embarque"
+        android:id="@+id/embarque" />
+</menu>
