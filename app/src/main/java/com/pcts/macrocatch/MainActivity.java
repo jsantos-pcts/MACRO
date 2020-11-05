@@ -1,11 +1,5 @@
 package com.pcts.macrocatch;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.appcompat.widget.Toolbar;
-
 import android.Manifest;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -23,7 +17,6 @@ import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.Selection;
 import android.util.Base64;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,6 +27,12 @@ import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -89,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 .setCancelable(false)
                 .setDuration(Duration.INDEFINITE)
                 .setUpdateFrom(UpdateFrom.GITHUB)
-                .setGitHubUserAndRepo("jsantos-pcts", "MACRO");
+                .setGitHubUserAndRepo("jsantos-pcts","MACRO");
         appUpdater.start();
 
         btnCamera = (Button)findViewById(R.id.btnCamera);
